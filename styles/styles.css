@@ -1,0 +1,374 @@
+/*@mixin xs() {
+    @media only screen and (max-width: 300px) { @content; }
+}*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato; }
+
+header {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../images/imac.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 100% 50%; }
+  @media only screen and (max-width: 765px) {
+    header {
+      box-shadow: 0 0 0 300em rgba(0, 0, 0, 0.6) inset; } }
+  header .container {
+    height: 100%; }
+  header .headerCenter {
+    display: flex;
+    height: 100%;
+    align-items: center; }
+    header .headerCenter .headerContent {
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px; }
+      @media only screen and (max-width: 991px) {
+        header .headerCenter .headerContent {
+          margin-left: 0; }
+          header .headerCenter .headerContent h1 {
+            font-size: 2em; }
+          header .headerCenter .headerContent p.lead {
+            font-size: 1em; } }
+      header .headerCenter .headerContent h1 {
+        line-height: 1.4em;
+        font-weight: bold; }
+      header .headerCenter .headerContent p {
+        color: #9c9ca2;
+        font-size: 1.3em; }
+      header .headerCenter .headerContent p.lead {
+        margin: 20px 0; }
+      header .headerCenter .headerContent .headerImg {
+        width: 88px; }
+      header .headerCenter .headerContent .downloadButton {
+        text-align: center;
+        width: 200px;
+        font-size: 0.7em; }
+        header .headerCenter .headerContent .downloadButton .btn {
+          width: 200px;
+          font-size: 1.4em;
+          color: white;
+          background: #8EC305; }
+
+.importantCDSection {
+  margin: 100px 0; }
+  .importantCDSection .WhyBackgroundRelative {
+    position: relative; }
+    .importantCDSection .WhyBackgroundRelative .WhyBackground {
+      position: absolute;
+      font-size: 16em;
+      top: -90px;
+      left: -30px;
+      opacity: 0.05; }
+  .importantCDSection .importantCDCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .importantCDSection .importantCDCenter .importantCDCol {
+      width: 60%; }
+      .importantCDSection .importantCDCenter .importantCDCol p {
+        margin: 30px 0;
+        color: #9c9ca2; }
+      .importantCDSection .importantCDCenter .importantCDCol .icons {
+        width: 30px;
+        margin: 0 15px; }
+
+.smartSortSection {
+  background: #F1992A;
+  height: 320px;
+  margin-top: 200px;
+  color: white;
+  /*@media (min-width: 700px), @media (min-width: 600px), @media (min-width: 500px), @media (min-width: 400px) {
+		height: 700 - (1/$media*100000);
+	}*/ }
+  @media only screen and (max-width: 1199px) {
+    .smartSortSection {
+      height: 250px; } }
+  @media only screen and (max-width: 991px) {
+    .smartSortSection {
+      height: 200px; } }
+  @media only screen and (max-width: 765px) {
+    .smartSortSection .smartSortContentCol {
+      padding-top: 450px; } }
+  @media only screen and (max-width: 765px) {
+    .smartSortSection .smartSortContentCol {
+      padding-top: 450px; } }
+  @media (min-width: 1200px) {
+    .smartSortSection .smartSortContentCol {
+      margin-left: 5em; } }
+  .smartSortSection:before {
+    height: 200px;
+    z-index: -3;
+    position: absolute;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    content: "";
+    display: inline-block;
+    padding: 0;
+    width: 105%;
+    margin-top: -60px;
+    background-image: linear-gradient(to bottom, rgba(185, 183, 178, 0.08), rgba(132, 128, 123, 0.08));
+    background: #F1992A; }
+    @media only screen and (max-width: 991px) {
+      .smartSortSection:before {
+        margin-top: -45px; } }
+  .smartSortSection .smartSortContentCol {
+    position: relative; }
+    .smartSortSection .smartSortContentCol h2 {
+      margin: 1em 0 0 0; }
+    .smartSortSection .smartSortContentCol p {
+      line-height: 1.7em;
+      font-weight: lighter;
+      margin-top: 3em;
+      font-size: 1.2em; }
+      @media only screen and (max-width: 1199px) {
+        .smartSortSection .smartSortContentCol p {
+          margin-top: 20px; } }
+      @media only screen and (max-width: 991px) {
+        .smartSortSection .smartSortContentCol p {
+          line-height: 1em;
+          font-size: 1em; } }
+  .smartSortSection .smartSortImg {
+    position: absolute;
+    top: -120px;
+    width: 100%; }
+    @media only screen and (max-width: 991px) {
+      .smartSortSection .smartSortImg {
+        left: 0;
+        top: -80px; } }
+
+.featuresSection {
+  margin: 50px 0 100px;
+  position: relative;
+  /*.featuresBGImg {
+		position: absolute;
+		top: 100%;
+		left: 30%;
+		z-index: -7;
+	}*/
+  /*.container {
+		&:after {
+			height: 120px;
+			z-index: 8;
+	    	position: absolute;
+			transform: rotate(-5deg);
+			-ms-transform: rotate(-5deg);
+			-webkit-transform: rotate(-5deg);
+			-o-transform: rotate(-5deg);
+			-moz-transform: rotate(-5deg);
+			content: "";
+			display: inline-block;
+			padding: 0;
+			width: 130%;
+			margin-top: 320px; 
+			left: -50px;   
+			//background-image: linear-gradient(to bottom, rgba(185, 183, 178, 0.08), rgba(132, 128, 123, 0.08));
+			background: white;
+			//background-image: url(../images/window.jpg);
+			//@include background;
+		}
+
+	}*/
+  /*&:after {
+		height: 400px;
+		z-index: -8;
+    	position: absolute;
+		transform: rotate(-5deg);
+		-ms-transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+		-o-transform: rotate(-5deg);
+		-moz-transform: rotate(-5deg);
+		content: "";
+		display: inline-block;
+		padding: 0;
+		width: 130%;
+		margin-top: -80px; 
+		left: -50px;   
+		background: #ffca00;
+	}*/ }
+  .featuresSection .headerImg {
+    width: 30px; }
+  .featuresSection .row {
+    margin-top: 50px; }
+  .featuresSection .featuresCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.testimonialsSection {
+  margin: 0px 0 200px; }
+  .testimonialsSection .testimonialsRow {
+    position: relative; }
+    .testimonialsSection .testimonialsRow .macbookImg {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      margin-left: -450px;
+      width: 900px; }
+      @media only screen and (max-width: 1199px) {
+        .testimonialsSection .testimonialsRow .macbookImg {
+          width: 690px;
+          margin-left: -345px; } }
+      @media only screen and (max-width: 765px) {
+        .testimonialsSection .testimonialsRow .macbookImg {
+          width: auto; } }
+  .testimonialsSection .testimonials-sync .slick-slide {
+    width: 250px;
+    height: 250px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 55px 10px;
+    text-align: center;
+    color: #9c9ca2;
+    align-items: baseline;
+    outline: none;
+    cursor: pointer; }
+    .testimonialsSection .testimonials-sync .slick-slide b {
+      color: black;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      align-items: center; }
+    .testimonialsSection .testimonials-sync .slick-slide p:hover {
+      color: black; }
+  .testimonialsSection .testimonials-sync .slick-current {
+    color: black; }
+  .testimonialsSection .testimonials .slick-current {
+    width: 5em;
+    height: 15em;
+    background: yellow;
+    display: flex !important;
+    justify-content: center;
+    align-items: center; }
+  .testimonialsSection .testimonials .testimonial {
+    height: 413px !important;
+    background-size: cover; }
+    @media only screen and (max-width: 1199px) {
+      .testimonialsSection .testimonials .testimonial {
+        height: 313px !important;
+        background-size: cover; } }
+    .testimonialsSection .testimonials .testimonial .cleanDesktopImg {
+      width: 50%;
+      position: relative;
+      /*add position values - fixing "clean desktop" images. Also add @include md and comment @include sm and xs*/
+      right: 1%;
+      top: 0.6%; }
+      @media only screen and (max-width: 1199px) {
+        .testimonialsSection .testimonials .testimonial .cleanDesktopImg {
+          width: 46.2%;
+          top: 0.8%; } }
+  .testimonialsSection #arrowsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em; }
+    .testimonialsSection #arrowsDiv .slick-arrow {
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      background: none;
+      outline: none; }
+    .testimonialsSection #arrowsDiv .slick-next {
+      border: 1px solid red;
+      position: relative; }
+      .testimonialsSection #arrowsDiv .slick-next .nextButtonCenter {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        background: red;
+        display: none; }
+    .testimonialsSection #arrowsDiv .slick-next:hover .nextButtonCenter {
+      display: block !important; }
+    .testimonialsSection #arrowsDiv .slick-center {
+      border: 1px solid orange;
+      position: relative;
+      cursor: default; }
+      .testimonialsSection #arrowsDiv .slick-center .centerButtonCenter {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        background: orange; }
+    .testimonialsSection #arrowsDiv .slick-prev {
+      border: 1px solid green;
+      position: relative; }
+      .testimonialsSection #arrowsDiv .slick-prev .prevButtonCenter {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        background: green;
+        display: none; }
+    .testimonialsSection #arrowsDiv .slick-prev:hover .prevButtonCenter {
+      display: block !important; }
+    .testimonialsSection #arrowsDiv .buttonLine {
+      height: 1px;
+      width: 290px;
+      background: black;
+      display: inline-block;
+      margin: 0 15px; }
+      @media only screen and (max-width: 1199px) {
+        .testimonialsSection #arrowsDiv .buttonLine {
+          width: 225px; } }
+      @media only screen and (max-width: 991px) {
+        .testimonialsSection #arrowsDiv .buttonLine {
+          width: 150px; } }
+      @media only screen and (max-width: 765px) {
+        .testimonialsSection #arrowsDiv .buttonLine {
+          width: 225px; } }
+      @media (max-width: 650px) {
+        .testimonialsSection #arrowsDiv .buttonLine {
+          width: 150px; } }
+      @media (max-width: 470px) {
+        .testimonialsSection #arrowsDiv .buttonLine {
+          width: 90px; } }
+
+.downloadSection {
+  /*&:before {
+		height: 300px;
+		z-index: -3;
+    	position: absolute;
+		transform: rotate(-5deg);
+		-ms-transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+		-o-transform: rotate(-5deg);
+		-moz-transform: rotate(-5deg);
+		content: "";
+		display: inline-block;
+		padding: 0;
+		width: 130%;
+		margin-top: -80px;    
+		background-image: linear-gradient(to bottom, rgba(185, 183, 178, 0.08), rgba(132, 128, 123, 0.08));
+		background: yellow;
+	}*/ }
+  .downloadSection .downloadButton {
+    text-align: center;
+    font-size: 0.7em; }
+    .downloadSection .downloadButton .btn {
+      background: #8EC305;
+      font-size: 1em;
+      color: white;
+      padding: 5px 30px; }
+  .downloadSection .downloadContentCol {
+    margin: 40px 0 20px 0; }
+  .downloadSection .downloadIMG {
+    width: 50px; }
+
+footer {
+  height: 100px; }
